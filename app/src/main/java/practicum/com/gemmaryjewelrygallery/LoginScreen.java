@@ -1,5 +1,6 @@
 package practicum.com.gemmaryjewelrygallery;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -33,10 +34,13 @@ public class LoginScreen extends AppCompatActivity {
     }
 
     public void Registration(View view) {
+        Intent reg = new Intent(getApplication(),RegisterScreen.class);
+        startActivity(reg);
         Toast.makeText(this, "PAREHISTRO KO BAI!", Toast.LENGTH_SHORT).show();
     }
 
     public void Login(View view) {
+
         Toast.makeText(this, "PALOG INA KO! Puhlease!", Toast.LENGTH_SHORT).show();
     }
 }
