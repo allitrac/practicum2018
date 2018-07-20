@@ -34,13 +34,14 @@ public class LoginScreen extends AppCompatActivity {
     }
 
     public void Registration(View view) {
-        Intent reg = new Intent(getApplication(),RegisterScreen.class);
-        startActivity(reg);
         Toast.makeText(this, "PAREHISTRO KO BAI!", Toast.LENGTH_SHORT).show();
+        Intent toRegisterScreen = new Intent(LoginScreen.this, RegisterScreen.class);
+        startActivity(toRegisterScreen);
     }
 
     public void Login(View view) {
-
-        Toast.makeText(this, "PALOG INA KO! Puhlease!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Successfully logged in!", Toast.LENGTH_SHORT).show();
+        Intent toMainScreen = new Intent(LoginScreen.this, MainActivity.class);
+        startActivity(toMainScreen);
     }
 }
