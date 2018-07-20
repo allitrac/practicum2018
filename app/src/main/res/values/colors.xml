@@ -7,4 +7,7 @@
     <color name="colorP">#3F51B5</color>
     <color name="colorPD">#303F9F</color>
     <color name="colorAcc">#FF4081</color>
+    <color name="white">#fff</color>
+    <color name="clouds">#ecf0f1</color>
+    <color name="transparent">#00000000</color>
 </resources>

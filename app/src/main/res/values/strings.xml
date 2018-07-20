@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">GemmaryJewelryGallery</string>
+    <string name="app_name">Gemmary Jewelry Gallery</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>
@@ -7,4 +7,12 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="gemmaryGallery">Gemmary Gallery</string>
+    <string name="title_activity_login_screen">LoginScreen</string>
+    <string name="email_title">Email</string>
+    <string name="password_title">Password</string>
+    <string name="gemmary_tagline">Pawnshop and Jewellery</string>
+    <string name="signin_title">SIGN IN</string>
+    <string name="forgot_pword_title">Forgot Passowrd?</string>
+    <string name="register_title">REGISTER</string>
 </resources>
