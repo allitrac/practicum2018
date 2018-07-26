@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="practicum.com.gemmaryjewelrygallery">
-    <uses-sdk android:minSdkVersion="4" android:targetSdkVersion="15" />
 
+    <uses-sdk
+        android:minSdkVersion="4"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -32,7 +38,8 @@
         <activity
             android:name=".RegisterScreen"
             android:theme="@style/Theme.Design.NoActionBar" />
-        <activity android:name=".Fragment.DashboardFragment"></activity>
+        <activity android:name=".Fragment.DashboardFragment" />
+        <activity android:name=".Activities.SampleDetails_1"></activity>
     </application>
 
 </manifest>

@@ -12,6 +12,7 @@ import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.Toast;
 
+import practicum.com.gemmaryjewelrygallery.Activities.SampleDetails_1;
 import practicum.com.gemmaryjewelrygallery.Adapter.DashboardAdapter;
 import practicum.com.gemmaryjewelrygallery.R;
 
@@ -39,6 +40,9 @@ import practicum.com.gemmaryjewelrygallery.R;
 
                     if (position == 0) {
               Toast.makeText(getActivity(), "Picture 1", Toast.LENGTH_SHORT).show();
+
+              Intent one = new Intent(getContext(), SampleDetails_1.class);
+              startActivity(one);
                     }
                     else if(position == 1){
                         Toast.makeText(getActivity(), "Picture 2", Toast.LENGTH_SHORT).show();
