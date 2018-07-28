@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity
 
         fragment();
     }
+
     public void fragment() {
         new Handler().postDelayed(new Runnable() {
             @Override
