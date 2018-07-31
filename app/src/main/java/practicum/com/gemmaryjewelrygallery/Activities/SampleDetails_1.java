@@ -1,11 +1,13 @@
 package practicum.com.gemmaryjewelrygallery.Activities;
 
 import android.animation.Animator;
+import android.content.Intent;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import practicum.com.gemmaryjewelrygallery.R;
 
@@ -43,6 +45,15 @@ public class SampleDetails_1 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 closeFABMenu();
+            }
+        });
+
+        fabLayout1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(), "Congratulations it is now reserved under your name.", Toast.LENGTH_SHORT).show();
+                Intent selectBranch = new Intent(SampleDetails_1.this, SelectBranch.class);
+                startActivity(selectBranch);
             }
         });
     }

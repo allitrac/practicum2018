@@ -11,4 +11,5 @@
     <color name="clouds">#ecf0f1</color>
     <color name="transparent">#00000000</color>
     <color name="colorTransBg">#26666670</color>
+    <color name="transparentWhite">#99f0f0f0</color>
 </resources>

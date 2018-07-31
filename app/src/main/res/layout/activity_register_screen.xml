@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/clouds"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="@drawable/translucent_registration_background"
     tools:context=".RegisterScreen">
 
 
@@ -19,7 +19,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.459"
         app:layout_constraintVertical_bias="0.052"
-        app:srcCompat="@drawable/gemmary_red" />
+        app:srcCompat="@drawable/gemmary_red"/>
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/textInputLayout2"
@@ -33,7 +33,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.213">
+        app:layout_constraintVertical_bias="0.213"
+        app:hintTextAppearance="@color/colorPrimaryDark"
+        android:nextFocusDown="@id/textInputLayout3">
 
         <android.support.design.widget.TextInputEditText
             android:id="@+id/userName"
@@ -42,7 +44,11 @@
             android:backgroundTint="@color/colorPrimaryDark"
             android:hint="Name"
             android:textColor="@color/colorAccent"
-            android:textCursorDrawable="@null" />
+            android:textCursorDrawable="@null"
+            android:inputType="text"
+            android:maxLines="1"
+            android:imeOptions="actionNext"/>
+
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
@@ -57,7 +63,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.213">
+        app:layout_constraintVertical_bias="0.213"
+        app:hintTextAppearance="@color/colorPrimaryDark"
+        android:nextFocusDown="@id/textInputLayout4">
 
         <android.support.design.widget.TextInputEditText
             android:id="@+id/userEmail"
@@ -66,7 +74,10 @@
             android:backgroundTint="@color/colorPrimaryDark"
             android:hint="Email"
             android:textColor="@color/colorAccent"
-            android:textCursorDrawable="@null" />
+            android:textCursorDrawable="@null"
+            android:inputType="textEmailAddress"
+            android:imeOptions="actionNext"/>
+
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
@@ -80,7 +91,9 @@
         app:layout_constraintHorizontal_bias="0.511"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.439">
+        app:layout_constraintVertical_bias="0.439"
+        app:hintTextAppearance="@color/colorPrimaryDark"
+        android:nextFocusDown="@id/textInputLayout5">
 
         <android.support.design.widget.TextInputEditText
             android:id="@+id/userContactNum"
@@ -89,7 +102,10 @@
             android:backgroundTint="@color/colorPrimaryDark"
             android:hint="Contact Num"
             android:textColor="@color/colorAccent"
-            android:textCursorDrawable="@null" />
+            android:textCursorDrawable="@null"
+            android:inputType="number"
+            android:imeOptions="actionNext"/>
+
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
@@ -103,7 +119,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.559">
+        app:layout_constraintVertical_bias="0.559"
+        app:hintTextAppearance="@color/colorPrimaryDark"
+        android:nextFocusDown="@id/textInputLayout6">
 
         <android.support.design.widget.TextInputEditText
             android:id="@+id/userAddress"
@@ -112,7 +130,9 @@
             android:backgroundTint="@color/colorPrimaryDark"
             android:hint="Address"
             android:textColor="@color/colorAccent"
-            android:textCursorDrawable="@null" />
+            android:textCursorDrawable="@null"
+            android:inputType="textPostalAddress"
+            android:imeOptions="actionNext"/>
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
@@ -126,7 +146,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.672">
+        app:layout_constraintVertical_bias="0.672"
+        app:hintTextAppearance="@color/colorPrimaryDark"
+        android:nextFocusDown="@id/textInputLayout">
 
         <android.support.design.widget.TextInputEditText
             android:id="@+id/userPass"
@@ -135,7 +157,9 @@
             android:backgroundTint="@color/colorPrimaryDark"
             android:hint="Password"
             android:textColor="@color/colorAccent"
-            android:textCursorDrawable="@null" />
+            android:textCursorDrawable="@null"
+            android:inputType="textPassword"
+            android:imeOptions="actionNext"/>
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
@@ -149,7 +173,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.79">
+        app:layout_constraintVertical_bias="0.79"
+        app:hintTextAppearance="@color/colorPrimaryDark">
 
         <android.support.design.widget.TextInputEditText
             android:id="@+id/userConfirmPass"
@@ -158,7 +183,10 @@
             android:backgroundTint="@color/colorPrimaryDark"
             android:hint="Confirm Password"
             android:textColor="@color/colorAccent"
-            android:textCursorDrawable="@null" />
+            android:textCursorDrawable="@null"
+            android:inputType="textPassword"
+            android:imeOptions="actionNext"/>
+
     </android.support.design.widget.TextInputLayout>
 
     <Button

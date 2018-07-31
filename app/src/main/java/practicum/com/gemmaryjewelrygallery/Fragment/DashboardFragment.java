@@ -76,21 +76,23 @@ public class DashboardFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
 
-                if (position == 0) {
-                    Toast.makeText(getActivity(), "Picture 1", Toast.LENGTH_SHORT).show();
-
-                    Intent one = new Intent(getContext(), SampleDetails_1.class);
-                    startActivity(one);
-                }
-                else if(position == 1){
-                    Toast.makeText(getActivity(), "Picture 2", Toast.LENGTH_SHORT).show();
-                }
-                else if(position == 2){
-                    Toast.makeText(getActivity(), "Picture 3", Toast.LENGTH_SHORT).show();
-                }
-                else if(position == 3){
-                    Toast.makeText(getActivity(), "Picure 4", Toast.LENGTH_SHORT).show();
-                }
+                Intent one = new Intent(getContext(), SampleDetails_1.class);
+                startActivity(one);
+//                if (position == 0) {
+//                    Toast.makeText(getActivity(), "Picture 1", Toast.LENGTH_SHORT).show();
+//
+//                    Intent one = new Intent(getContext(), SampleDetails_1.class);
+//                    startActivity(one);
+//                }
+//                else if(position == 1){
+//                    Toast.makeText(getActivity(), "Picture 2", Toast.LENGTH_SHORT).show();
+//                }
+//                else if(position == 2){
+//                    Toast.makeText(getActivity(), "Picture 3", Toast.LENGTH_SHORT).show();
+//                }
+//                else if(position == 3){
+//                    Toast.makeText(getActivity(), "Picure 4", Toast.LENGTH_SHORT).show();
+//                }
             }
         });
     }

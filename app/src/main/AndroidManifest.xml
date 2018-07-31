@@ -14,10 +14,10 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        android:largeHeap="true">
+        android:theme="@style/AppTheme">
         <activity
             android:name=".SplashScreen"
             android:label="@string/app_name"
@@ -39,8 +39,10 @@
         <activity
             android:name=".RegisterScreen"
             android:theme="@style/Theme.Design.NoActionBar" />
-        <activity android:name=".Activities.SampleDetails_1"/>
 
+        <activity android:name=".Activities.SampleDetails_1" />
+
+        <activity android:name=".Activities.SelectBranch"/>
     </application>
 
 </manifest>

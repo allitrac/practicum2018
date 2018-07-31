@@ -13,9 +13,10 @@
     <string name="password_title">Password</string>
     <string name="gemmary_tagline">Pawnshop and Jewellery</string>
     <string name="signin_title">SIGN IN</string>
-    <string name="forgot_pword_title">Forgot Passowrd?</string>
+    <string name="forgot_pword_title">Forgot Password?</string>
     <string name="register_title">REGISTER</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="reserve_title">Reserve</string>
 </resources>
