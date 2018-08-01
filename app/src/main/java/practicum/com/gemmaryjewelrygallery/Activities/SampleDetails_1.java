@@ -21,13 +21,13 @@ public class SampleDetails_1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
       setContentView(R.layout.activity_sample_details_1);
 
-        fabLayout1= (LinearLayout) findViewById(R.id.fabLayout1);
-        fabLayout2= (LinearLayout) findViewById(R.id.fabLayout2);
-        fabLayout3= (LinearLayout) findViewById(R.id.fabLayout3);
-        fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab1 = (FloatingActionButton) findViewById(R.id.fab1);
-        fab2= (FloatingActionButton) findViewById(R.id.fab2);
-        fab3 = (FloatingActionButton) findViewById(R.id.fab3);
+        fabLayout1=  findViewById(R.id.fabLayout1);
+        fabLayout2=  findViewById(R.id.fabLayout2);
+        fabLayout3=  findViewById(R.id.fabLayout3);
+        fab =  findViewById(R.id.fab);
+        fab1 =  findViewById(R.id.fab1);
+        fab2=  findViewById(R.id.fab2);
+        fab3 =  findViewById(R.id.fab3);
         fabBGLayout=findViewById(R.id.fabBGLayout);
 
         fab.setOnClickListener(new View.OnClickListener() {

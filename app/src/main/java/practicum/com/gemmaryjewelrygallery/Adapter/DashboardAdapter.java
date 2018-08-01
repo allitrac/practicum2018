@@ -12,6 +12,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 
 import practicum.com.gemmaryjewelrygallery.R;
 
@@ -92,7 +93,7 @@ public class DashboardAdapter extends BaseAdapter {
 
         Glide.with(mContext)
                 .load(gridViewItems[position])
-                .placeholder(R.drawable.ic_menu_camera)
+                .apply(new RequestOptions().placeholder(R.drawable.ic_menu_camera).error(R.drawable.ic_menu_camera))
                 .into(itemHolder.ivItemPhoto);
 
         return convertView;
@@ -103,8 +104,6 @@ public class DashboardAdapter extends BaseAdapter {
         public ImageView ivItemPhoto;
         public TextView tvItemName, tvItemPrice, tvItemKarats;
     }
-
-
     private int[] gridViewItems = {
             R.drawable.diamond_1, R.drawable.diamond_2,
             R.drawable.necklace_2,R.drawable.pearl_1,
@@ -142,3 +141,5 @@ public class DashboardAdapter extends BaseAdapter {
             "164, 257.94", "269, 852.33", "65, 307.68", "108, 007.77"
     };
 }
+
+

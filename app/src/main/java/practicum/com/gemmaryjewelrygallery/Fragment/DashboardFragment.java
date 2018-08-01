@@ -23,37 +23,6 @@ public class DashboardFragment extends Fragment {
 
     private View rootView;
 
-//        int[] gridViewItems = {
-//                R.drawable.diamond_1, R.drawable.diamond_2,R.drawable.necklace_2,R.drawable.pearl_1,
-//                R.drawable.diamond_1, R.drawable.diamond_2,R.drawable.necklace_2,R.drawable.pearl_1,
-//                R.drawable.diamond_1, R.drawable.diamond_2,R.drawable.necklace_2,R.drawable.pearl_1,
-//                R.drawable.diamond_1, R.drawable.diamond_2,R.drawable.necklace_2,R.drawable.pearl_1,
-//                R.drawable.diamond_1, R.drawable.diamond_2,R.drawable.necklace_2,R.drawable.pearl_1
-//        };
-//
-//        String[] gridViewItemNames = {
-//                "Diamond 1", "Diamond 2", "Necklace 2", "Pearl 1",
-//                "Diamond 1", "Diamond 2", "Necklace 2", "Pearl 1",
-//                "Diamond 1", "Diamond 2", "Necklace 2", "Pearl 1",
-//                "Diamond 1", "Diamond 2", "Necklace 2", "Pearl 1",
-//                "Diamond 1", "Diamond 2", "Necklace 2", "Pearl 1"
-//        };
-//
-//        String[] gridViewItemKarats = {
-//                "1", "2", "24", "18",
-//                "1", "2", "24", "18",
-//                "1", "2", "24", "18",
-//                "1", "2", "24", "18",
-//                "1", "2", "24", "18",
-//        };
-//
-//        String[] gridViewItemPrices = {
-//                "164, 257.94", "269, 852.33", "65, 307.68", "108, 007.77",
-//                "164, 257.94", "269, 852.33", "65, 307.68", "108, 007.77",
-//                "164, 257.94", "269, 852.33", "65, 307.68", "108, 007.77",
-//                "164, 257.94", "269, 852.33", "65, 307.68", "108, 007.77",
-//                "164, 257.94", "269, 852.33", "65, 307.68", "108, 007.77"
-//        };
 
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
