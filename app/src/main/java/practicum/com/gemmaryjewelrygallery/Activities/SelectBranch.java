@@ -72,6 +72,5 @@ public class SelectBranch extends AppCompatActivity {
         }
 
         branchAdapter.filterLocation(branches);
-
     }
 }

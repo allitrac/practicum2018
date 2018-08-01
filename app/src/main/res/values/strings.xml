@@ -16,6 +16,8 @@
     <string name="forgot_pword_title">Forgot Password?</string>
     <string name="register_title">REGISTER</string>
 
+    <string name="hint"><font size="12">Please select your preferred Gemmary Branch</font></string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="reserve_title">Reserve</string>
