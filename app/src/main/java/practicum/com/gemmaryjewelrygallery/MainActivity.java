@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity
                         .replace(R.id.mainFrame, new DashboardFragment())
                         .commit();
             }
-        }, 0);
+        },  0);
     }
 
     @Override

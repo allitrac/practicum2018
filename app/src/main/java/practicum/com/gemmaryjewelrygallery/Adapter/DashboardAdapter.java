@@ -1,7 +1,9 @@
 package practicum.com.gemmaryjewelrygallery.Adapter;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -105,6 +107,7 @@ public class DashboardAdapter extends BaseAdapter {
         public TextView tvItemName, tvItemPrice, tvItemKarats;
     }
     private int[] gridViewItems = {
+
             R.drawable.diamond_1, R.drawable.diamond_2,
             R.drawable.necklace_2,R.drawable.pearl_1,
             R.drawable.diamond_1, R.drawable.diamond_2,
@@ -140,6 +143,7 @@ public class DashboardAdapter extends BaseAdapter {
             "164, 257.94", "269, 852.33", "65, 307.68", "108, 007.77",
             "164, 257.94", "269, 852.33", "65, 307.68", "108, 007.77"
     };
+
 }
 
 
