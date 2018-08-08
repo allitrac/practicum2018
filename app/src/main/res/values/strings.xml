@@ -21,4 +21,33 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="reserve_title">Reserve</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Duis condimentum malesuada purus eget tincidunt.
+        Mauris augue est, imperdiet non iaculis vitae, imperdiet ac odio.
+        Cras vitae leo sed neque blandit porttitor sed vel ante.
+        Nullam efficitur sem ipsum, non pretium felis ultrices nec.
+        Vestibulum nibh turpis, pretium vel libero eu, blandit maximus massa.
+        Vivamus congue ligula id nisl cursus, ac sodales sem viverra.
+        Suspendisse nec sollicitudin neque.
+
+        Donec consequat varius purus sit amet ullamcorper.
+        Nullam fermentum magna vitae lorem laoreet accumsan.
+        Quisque non nisl pellentesque eros venenatis finibus.
+        Fusce faucibus, ante eget tempus maximus, elit augue condimentum ante,
+        vitae sollicitudin nunc libero vel metus.
+
+        Praesent euismod gravida sollicitudin.
+        Etiam eu ex et lectus molestie tincidunt.
+        Integer mauris purus, interdum ac lorem ac, lobortis iaculis felis.
+        Nullam ac turpis sed lectus blandit interdum sed ac ipsum.
+        Cras sollicitudin felis id nisl congue pharetra.
+        Sed quis dolor molestie, placerat turpis id, euismod turpis.
+        Curabitur quis luctus sapien. Nam vel laoreet augue, at blandit leo.
+        Sed ultrices nulla lobortis augue convallis, blandit dapibus diam ultrices.
+        In eu quam sit amet turpis luctus molestie.
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+        Sed ac sagittis dolor. Integer luctus convallis sagittis.
+        Proin odio ante, pharetra sed imperdiet eget, elementum quis urna.
+        Morbi eget aliquet diam.</string>
+
 </resources>
