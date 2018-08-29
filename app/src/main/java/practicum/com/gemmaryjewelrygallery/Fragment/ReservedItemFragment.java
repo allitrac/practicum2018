@@ -24,11 +24,12 @@ import practicum.com.gemmaryjewelrygallery.R;
 public class ReservedItemFragment extends Fragment {
 
     private OnFragmentInteractionListener mListener;
-    private RelativeLayout relLayItemDetails;
-    private Button btnItemDetails;
+    private RelativeLayout relLayItemDetails, relLayReservationDetails;
+    private Button btnItemDetails, btnReservationDetails;
     private ScrollView scrollViewItems;
 
     private boolean itemDetailsIsOpen = false;
+    private boolean reservationDetailsIsOpen = false;
 
     public ReservedItemFragment() {
         // Required empty public constructor
@@ -47,6 +48,9 @@ public class ReservedItemFragment extends Fragment {
         btnItemDetails = v.findViewById(R.id.btnItemDetails);
         relLayItemDetails = v.findViewById(R.id.relLayItemDetails);
 
+        btnReservationDetails = v.findViewById(R.id.btnReservationDetails);
+        relLayReservationDetails = v.findViewById(R.id.relLayReservationDetails);
+
         scrollViewItems = v.findViewById(R.id.scrollViewDetails);
 //        scrollViewItems.scrollTo(0,0);
 
@@ -56,17 +60,9 @@ public class ReservedItemFragment extends Fragment {
         btnItemDetails.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (itemDetailsIsOpen == false){
+                if (!itemDetailsIsOpen){
 
                     relLayItemDetails.setVisibility(View.VISIBLE);
-
-                    scrollViewItems.post(new Runnable() {
-                        @Override
-                        public void run() {
-                            scrollViewItems.smoothScrollTo(scrollToRelLayItemDetails, 0);
-                        }
-                    });
-
 
                     btnItemDetails.setCompoundDrawablesWithIntrinsicBounds(0, 0, icUp, 0);
 
@@ -80,6 +76,26 @@ public class ReservedItemFragment extends Fragment {
 
                     itemDetailsIsOpen = false;
 
+                }
+            }
+        });
+
+        btnReservationDetails.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (!reservationDetailsIsOpen){
+                    relLayReservationDetails.setVisibility(View.VISIBLE);
+
+                    btnReservationDetails.setCompoundDrawablesWithIntrinsicBounds(0, 0, icUp, 0);
+
+                    reservationDetailsIsOpen = true;
+                } else {
+
+                    relLayReservationDetails.setVisibility(View.GONE);
+
+                    btnReservationDetails.setCompoundDrawablesWithIntrinsicBounds(0,0,icDown,0);
+
+                    reservationDetailsIsOpen = false;
                 }
             }
         });

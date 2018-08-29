@@ -23,7 +23,6 @@ public class DashboardFragment extends Fragment {
 
     private View rootView;
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
@@ -40,28 +39,17 @@ public class DashboardFragment extends Fragment {
         GridView gridview = rootView.findViewById(R.id.gridview);
 
         gridview.setAdapter(new DashboardAdapter(getContext()));
-
         gridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
 
                 Intent one = new Intent(getContext(), SampleDetails_1.class);
+
+                one.putExtra("itemClickedPosition", Integer.toString(position));
+
+//                Toast.makeText(getContext(), "DASHBOARD FRAGMENT: Item Clicked Position: "+ position, Toast.LENGTH_SHORT).show();
+
                 startActivity(one);
-//                if (position == 0) {
-//                    Toast.makeText(getActivity(), "Picture 1", Toast.LENGTH_SHORT).show();
-//
-//                    Intent one = new Intent(getContext(), SampleDetails_1.class);
-//                    startActivity(one);
-//                }
-//                else if(position == 1){
-//                    Toast.makeText(getActivity(), "Picture 2", Toast.LENGTH_SHORT).show();
-//                }
-//                else if(position == 2){
-//                    Toast.makeText(getActivity(), "Picture 3", Toast.LENGTH_SHORT).show();
-//                }
-//                else if(position == 3){
-//                    Toast.makeText(getActivity(), "Picure 4", Toast.LENGTH_SHORT).show();
-//                }
             }
         });
     }

@@ -66,6 +66,8 @@ public class BranchAdapter extends RecyclerView.Adapter<BranchHolder> {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         Toast.makeText(mContext, "Congratulations it is now reserved under your name and we'll bring the item to your preferred location. \n Thank you!", Toast.LENGTH_LONG).show();
+                        Intent intentToDashboardActivity = new Intent(mContext, MainActivity.class);
+                        mContext.startActivity(intentToDashboardActivity);
                     }
                 });
 

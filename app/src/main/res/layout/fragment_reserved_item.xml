@@ -147,11 +147,36 @@
                     android:visibility="gone">
 
                     <TextView
+                        android:id="@+id/tvReservationDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Reservation Date"
+                        android:padding="2dp"/>
+
+                    <TextView
+                        android:id="@+id/tvReservationTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Reservation Time"
+                        android:padding="2dp"
+                        android:layout_toRightOf="@id/tvReservationDate"
+                        android:layout_toEndOf="@id/tvReservationDate"/>
+
+                    <TextView
+                        android:id="@+id/tvReservationArea"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Reservation Area"
+                        android:padding="2dp"
+                        android:layout_below="@id/tvReservationDate"/>
+
+                    <TextView
                         android:id="@+id/tvSAMPLEDEFINITION"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/lorem"
-                        android:padding="3dp"/>
+                        android:padding="3dp"
+                        android:layout_below="@id/tvReservationArea"/>
 
                 </RelativeLayout>
 
