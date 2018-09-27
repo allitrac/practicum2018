@@ -12,4 +12,7 @@
     <color name="transparent">#00000000</color>
     <color name="colorTransBg">#26666670</color>
     <color name="transparentWhite">#99f0f0f0</color>
+    <color name="minimalist_gray">#a8a7ab</color>
+    <color name="lighter_than_minimalist_gray">#e7e6e9</color>
+
 </resources>

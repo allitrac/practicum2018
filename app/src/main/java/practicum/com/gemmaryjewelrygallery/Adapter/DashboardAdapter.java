@@ -78,6 +78,8 @@ public class DashboardAdapter extends BaseAdapter {
             itemHolder.tvItemName = convertView.findViewById(R.id.tvItemName);
             itemHolder.tvItemPrice = convertView.findViewById(R.id.tvItemPrice);
             itemHolder.tvItemKarats = convertView.findViewById(R.id.tvItemKarats);
+            itemHolder.tvItemType = convertView.findViewById(R.id.tvItemType);
+            itemHolder.tvGoldType = convertView.findViewById(R.id.tvGoldType);
 
             convertView.setTag(itemHolder);
 
@@ -94,6 +96,8 @@ public class DashboardAdapter extends BaseAdapter {
         itemHolder.tvItemName.setText(gridViewItemNames[position]);
         itemHolder.tvItemKarats.setText(gridViewItemKarats[position]);
         itemHolder.tvItemPrice.setText(gridViewItemPrices[position]);
+        itemHolder.tvItemType.setText(gridViewItemType[position]);
+        itemHolder.tvGoldType.setText(gridViewGoldType[position]);
 
         Glide.with(mContext)
                 .load(gridViewItems[position])
@@ -106,7 +110,7 @@ public class DashboardAdapter extends BaseAdapter {
     public static class ItemHolder{
 
         public ImageView ivItemPhoto;
-        public TextView tvItemName, tvItemPrice, tvItemKarats;
+        public TextView tvItemName, tvItemPrice, tvItemKarats, tvItemType, tvGoldType;
     }
 
     public int[] gridViewItems = {
@@ -145,6 +149,22 @@ public class DashboardAdapter extends BaseAdapter {
             "164, 257.94", "269, 852.33", "65, 307.68", "108, 007.77",
             "164, 257.94", "269, 852.33", "65, 307.68", "108, 007.77",
             "164, 257.94", "269, 852.33", "65, 307.68", "108, 007.77"
+    };
+
+    public String[] gridViewItemType = {
+            "Ring", "Ring", "Pendant", "Necklace",
+            "Ring", "Ring", "Pendant", "Necklace",
+            "Ring", "Ring", "Pendant", "Necklace",
+            "Ring", "Ring", "Pendant", "Necklace",
+            "Ring", "Ring", "Pendant", "Necklace",
+    };
+
+    public String[] gridViewGoldType = {
+            "White Gold", "White Gold", "Yellow Gold", "White Gold",
+            "White Gold", "White Gold", "Yellow Gold", "White Gold",
+            "White Gold", "White Gold", "Yellow Gold", "White Gold",
+            "White Gold", "White Gold", "Yellow Gold", "White Gold",
+            "White Gold", "White Gold", "Yellow Gold", "White Gold",
     };
 
 }

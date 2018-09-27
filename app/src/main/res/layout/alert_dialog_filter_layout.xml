@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="start"
+    android:layout_marginTop="10dp"
+    android:paddingStart="10dp"
+    android:paddingLeft="10dp"
+    android:paddingEnd="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvItemTypeTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/item_type_title"
+        android:textColor="@color/minimalist_gray"/>
+
+        <Spinner
+            android:id="@+id/spnrItemType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorTransBg"/>
+
+    <TextView
+        android:id="@+id/tvGoldTypeTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/gold_type_title"
+        android:textColor="@color/minimalist_gray"/>
+
+        <Spinner
+            android:id="@+id/spnrGoldType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorTransBg"/>
+
+    <TextView
+        android:id="@+id/tvGoldKaratTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/gold_karat_title"
+        android:textColor="@color/minimalist_gray"/>
+
+        <Spinner
+            android:id="@+id/spnrGoldKarat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorTransBg"/>
+
+    <TextView
+        android:id="@+id/tvGoldQualityTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/gold_quality_title"
+        android:textColor="@color/minimalist_gray"/>
+
+        <Spinner
+            android:id="@+id/spnrGoldQuality"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorTransBg"/>
+
+</LinearLayout>

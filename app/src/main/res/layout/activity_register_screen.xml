@@ -185,7 +185,7 @@
             android:textColor="@color/colorAccent"
             android:textCursorDrawable="@null"
             android:inputType="textPassword"
-            android:imeOptions="actionNext"/>
+            android:imeOptions="actionDone"/>
 
     </android.support.design.widget.TextInputLayout>
 

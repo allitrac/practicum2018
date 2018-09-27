@@ -1,5 +1,7 @@
 package practicum.com.gemmaryjewelrygallery;
 
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
@@ -7,6 +9,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.AlertDialog;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -16,6 +19,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
+import android.widget.Toast;
 
 import practicum.com.gemmaryjewelrygallery.Fragment.DashboardFragment;
 import practicum.com.gemmaryjewelrygallery.Fragment.ReservedItemFragment;
@@ -86,7 +92,58 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_filter) {
+            Toast.makeText(this, "CLICKED ITEM: "+item, Toast.LENGTH_SHORT).show();
+
+            final AlertDialog.Builder mBuilder = new AlertDialog.Builder(this);
+            mBuilder.setTitle("Filter");
+
+            View mView = getLayoutInflater().inflate(R.layout.alert_dialog_filter_layout, null);
+
+            Spinner itemTypeSpnr = mView.findViewById(R.id.spnrItemType);
+            Spinner goldTypeSpnr = mView.findViewById(R.id.spnrGoldType);
+            Spinner goldKaratSpnr = mView.findViewById(R.id.spnrGoldKarat);
+            Spinner goldQualitySpnr = mView.findViewById(R.id.spnrGoldQuality);
+
+            ArrayAdapter<String> itemTypeAdapter = new ArrayAdapter<String>(this,
+                    android.R.layout.simple_spinner_dropdown_item,
+                    getResources().getStringArray(R.array.item_type));
+            itemTypeSpnr.setAdapter(itemTypeAdapter);
+
+            ArrayAdapter<String> goldTypeAdapter = new ArrayAdapter<String>(this,
+                    android.R.layout.simple_spinner_dropdown_item,
+                    getResources().getStringArray(R.array.gold_type));
+            goldTypeSpnr.setAdapter(goldTypeAdapter);
+
+            ArrayAdapter<String> goldKaratAdapter = new ArrayAdapter<String>(this,
+                    android.R.layout.simple_spinner_dropdown_item,
+                    getResources().getStringArray(R.array.gold_karat));
+            goldKaratSpnr.setAdapter(goldKaratAdapter);
+
+            ArrayAdapter<String> goldQualityAdapter = new ArrayAdapter<String>(this,
+                    android.R.layout.simple_spinner_dropdown_item,
+                    getResources().getStringArray(R.array.gold_quality));
+            goldQualitySpnr.setAdapter(goldQualityAdapter);
+
+            mBuilder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialogInterface, int i) {
+                    Toast.makeText(MainActivity.this, "Clicked OK!", Toast.LENGTH_SHORT).show();
+                    dialogInterface.dismiss();
+                }
+            });
+
+            mBuilder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialogInterface, int i) {
+                    dialogInterface.dismiss();
+                }
+            });
+
+            mBuilder.setView(mView);
+            AlertDialog dialog = mBuilder.create();
+            dialog.show();
+
             return true;
         }
 
@@ -109,7 +166,8 @@ public class MainActivity extends AppCompatActivity
             setTitle("Reservation Details");
 
         }  else if (id == R.id.nav_logout) {
-
+            Intent logout = new Intent(this, LoginScreen.class);
+            startActivity(logout);
         }
 
         if (mainFragment != null) {

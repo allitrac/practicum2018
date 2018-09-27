@@ -42,63 +42,64 @@ public class ReservedItemFragment extends Fragment {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_reserved_item, container, false);
 
-        final int icUp = R.drawable.ic_keyboard_arrow_up_red_24dp;
-        final int icDown = R.drawable.ic_keyboard_arrow_down_red_24dp;
+//        final int icUp = R.drawable.ic_keyboard_arrow_up_red_24dp;
+//        final int icDown = R.drawable.ic_keyboard_arrow_down_red_24dp;
+//
+//        btnItemDetails = v.findViewById(R.id.btnItemDetails);
+//        relLayItemDetails = v.findViewById(R.id.relLayItemDetails);
+//
+//        btnReservationDetails = v.findViewById(R.id.btnReservationDetails);
+//        relLayReservationDetails = v.findViewById(R.id.relLayReservationDetails);
+//
+//        scrollViewItems = v.findViewById(R.id.scrollViewDetails);
+////        scrollViewItems.scrollTo(0,0);
+//
+//        final int scrollToRelLayItemDetails = relLayItemDetails.getBottom();
+//
+//
+//        btnItemDetails.setOnClickListener(new Button.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                if (!itemDetailsIsOpen){
+//
+//                    relLayItemDetails.setVisibility(View.VISIBLE);
+//
+//                    btnItemDetails.setCompoundDrawablesWithIntrinsicBounds(0, 0, icUp, 0);
+//
+//                    itemDetailsIsOpen = true;
+//
+//                } else {
+//
+//                    relLayItemDetails.setVisibility(View.GONE);
+//
+//                    btnItemDetails.setCompoundDrawablesWithIntrinsicBounds(0, 0, icDown, 0);
+//
+//                    itemDetailsIsOpen = false;
+//
+//                }
+//            }
+//        });
+//
+//        btnReservationDetails.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                if (!reservationDetailsIsOpen){
+//                    relLayReservationDetails.setVisibility(View.VISIBLE);
+//
+//                    btnReservationDetails.setCompoundDrawablesWithIntrinsicBounds(0, 0, icUp, 0);
+//
+//                    reservationDetailsIsOpen = true;
+//                } else {
+//
+//                    relLayReservationDetails.setVisibility(View.GONE);
+//
+//                    btnReservationDetails.setCompoundDrawablesWithIntrinsicBounds(0,0,icDown,0);
+//
+//                    reservationDetailsIsOpen = false;
+//                }
+//            }
+//        });
 
-        btnItemDetails = v.findViewById(R.id.btnItemDetails);
-        relLayItemDetails = v.findViewById(R.id.relLayItemDetails);
-
-        btnReservationDetails = v.findViewById(R.id.btnReservationDetails);
-        relLayReservationDetails = v.findViewById(R.id.relLayReservationDetails);
-
-        scrollViewItems = v.findViewById(R.id.scrollViewDetails);
-//        scrollViewItems.scrollTo(0,0);
-
-        final int scrollToRelLayItemDetails = relLayItemDetails.getBottom();
-
-
-        btnItemDetails.setOnClickListener(new Button.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (!itemDetailsIsOpen){
-
-                    relLayItemDetails.setVisibility(View.VISIBLE);
-
-                    btnItemDetails.setCompoundDrawablesWithIntrinsicBounds(0, 0, icUp, 0);
-
-                    itemDetailsIsOpen = true;
-
-                } else {
-
-                    relLayItemDetails.setVisibility(View.GONE);
-
-                    btnItemDetails.setCompoundDrawablesWithIntrinsicBounds(0, 0, icDown, 0);
-
-                    itemDetailsIsOpen = false;
-
-                }
-            }
-        });
-
-        btnReservationDetails.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (!reservationDetailsIsOpen){
-                    relLayReservationDetails.setVisibility(View.VISIBLE);
-
-                    btnReservationDetails.setCompoundDrawablesWithIntrinsicBounds(0, 0, icUp, 0);
-
-                    reservationDetailsIsOpen = true;
-                } else {
-
-                    relLayReservationDetails.setVisibility(View.GONE);
-
-                    btnReservationDetails.setCompoundDrawablesWithIntrinsicBounds(0,0,icDown,0);
-
-                    reservationDetailsIsOpen = false;
-                }
-            }
-        });
         return v;
     }
 

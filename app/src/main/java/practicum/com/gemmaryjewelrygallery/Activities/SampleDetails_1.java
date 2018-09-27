@@ -79,7 +79,7 @@ public class SampleDetails_1 extends AppCompatActivity {
         fabLayout1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "Congratulations it is now reserved under your name.", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getApplicationContext(), "Congratulations it is now reserved under your name.", Toast.LENGTH_SHORT).show();
                 Intent selectBranch = new Intent(SampleDetails_1.this, SelectBranch.class);
                 startActivity(selectBranch);
             }
@@ -89,8 +89,8 @@ public class SampleDetails_1 extends AppCompatActivity {
     private void showFABMenu(){
         isFABOpen=true;
         fabLayout1.setVisibility(View.VISIBLE);
-        fabLayout2.setVisibility(View.VISIBLE);
-        fabLayout3.setVisibility(View.VISIBLE);
+//        fabLayout2.setVisibility(View.VISIBLE);
+//        fabLayout3.setVisibility(View.VISIBLE);
         fabBGLayout.setVisibility(View.VISIBLE);
 
         fab.animate().rotationBy(180);
